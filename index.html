@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todolist app</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <h1>todo list</h1>
+        </div>
+        <div class="add-task">
+            <input type="text" class="new-task-input" placeholder="add a task">
+            <button class="add-task-btn">+</button>
+        </div>
+        <div class="task-list-header">
+            <h2>task</h2>
+            <button class="remove-complate-btn">clear complate</button>
+        </div>
+        <div class="task-list-wrapper">
+            <ul class="task-list">
+
+            </ul>
+        </div>
+    </div>
+    <template class="task-template"><!--we import temlate into ul--><!--inside temlete we use this to creat to new list item-->
+        <li class="task">
+            <input type="checkbox">
+            <label>
+                <span class="check-mark">&#10004</span>
+                <span class="custom-checkbox"></span>
+            </label>
+        </li>
+    </template>
+    <script src="canvas.js"></script>
+</body>
+</html>
